@@ -1,0 +1,12 @@
+[Unit]
+Description=Uketoru SMTP relay
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/etc/uketoru
+ExecStart=/usr/bin/uketoru
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

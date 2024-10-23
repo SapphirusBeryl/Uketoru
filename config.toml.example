@@ -1,0 +1,43 @@
+[relay]
+# Declare a token here to enable token authentication.
+# Leaving this value undeclared will disable this functionality.
+#  
+#  token = "TOKEN_HERE"
+#
+# Listen value declaration structured with the hostname:port
+#  
+#  listen = "0.0.0.0:3000"
+#
+
+[smtp]
+# SMTP Transport Type. Available types: TLS and StartTLS. 
+# By default, TLS is selected when this value is undeclared. 
+#
+#  transport = "StartTLS"
+# 
+# Hostname for the SMTP Mailer this gateway is relaying messages towards.
+# Note: This value is required. 
+#
+server = "smtp.example.com"
+
+# Declare this value if the SMTP Mailer is on a different port. e.g. SUBMISSION 587
+# 
+#  port = 587
+#
+# E-mail Address being used to relay messages.
+# Note: This value is required.
+#
+address = "mail@example.com"
+# Sender name for the relay address.
+# The default naem is Uketoru. 
+#
+#  name = "Sender Name"
+#
+# Username credential used to authenticate against the SMTP mailer.
+# If this value is undeclared, it will default to the e-mail adddress specified.
+#
+#  username = "user"
+#
+# Pasword credential used to authenticate against the SMTP mailer. 
+#
+#password = "password"
