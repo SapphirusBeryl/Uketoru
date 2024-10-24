@@ -18,7 +18,7 @@ env:
 jobs:
   checkfmt:
     name: Check format
-    runs-on: docker
+    runs-on: ubuntu-latest
     container:
       image: alpine
     strategy:
@@ -38,7 +38,7 @@ jobs:
         run: cargo fmt --check
   lint:
     name: Lint Uketoru
-    runs-on: docker
+    runs-on: ubuntu-latest
     container:
       image: alpine
     strategy:
@@ -58,7 +58,7 @@ jobs:
         run: cargo clippy --release -- -Dwarnings
   build:
     name: Build Uketoru
-    runs-on: docker
+    runs-on: ubuntu-latest
     container:
       image: alpine
     strategy:
