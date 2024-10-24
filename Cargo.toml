@@ -1,7 +1,9 @@
 [package]
 name = "uketoru"
-license = "MIT"
+description = "Simple SMTP Relay"
+repository = "https://github.com/SapphirusBeryl/Uketoru/"
 authors = [ "Xavier Moffett <sapphirus@azorium.net>" ]
+license = "MIT"
 version = "0.1.0"
 edition = "2021"
 rust-version="1.82"
