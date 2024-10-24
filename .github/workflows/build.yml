@@ -12,7 +12,7 @@ on:
 
 env: 
   CARGO_TERM_COLOR: always
-  PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.cargo/bin
+  PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/github/home/.cargo/bin
   RUSTFLAGS: -C target-feature=-crt-static
 
 jobs:
